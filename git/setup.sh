@@ -1,5 +1,8 @@
 #!/bin/sh
 
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -P ~/.zsh
+chmod 744 ~/.zsh/git-completion.zsh
+
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
 git config --global color.ui true
@@ -14,7 +17,7 @@ git config --global color.diff.old        "red bold"
 git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
 
-echo "Git eame:"
+echo "Git name:"
 read name
 
 echo "Git email:"
