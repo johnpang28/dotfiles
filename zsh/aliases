@@ -3,3 +3,5 @@ alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)
 alias ls='exa'
 alias ll='ls -l'
 alias k='kotlinc-jvm'
+alias git='hub'
+alias htop='sudo htop'
