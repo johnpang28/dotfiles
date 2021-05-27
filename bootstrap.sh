@@ -8,4 +8,5 @@ set -e
 ./powerlevel10k/setup.sh
 ./kotlin/setup.sh
 ./misc/setup.sh
+./vim/setup.sh
 ./zsh/setup.sh
