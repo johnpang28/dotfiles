@@ -2,7 +2,7 @@
 
 set -e
 
-KOTLIN_VERSION=1.3.61
+KOTLIN_VERSION=1.5.10
 KOTLIN_COMPLIER_ZIP=kotlin-compiler-$KOTLIN_VERSION.zip
 KOTLIN_NATIVE_TAR=kotlin-native-macos-${KOTLIN_VERSION}.tar.gz
 
