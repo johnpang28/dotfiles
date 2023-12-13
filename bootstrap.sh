@@ -11,6 +11,7 @@ fi
 ./sudo/setup.sh
 ./homebrew/setup.sh
 ./powerlevel10k/setup.sh
+./java/setup.sh
 ./kotlin/setup.sh
 ./misc/setup.sh
 ./vim/setup.sh
