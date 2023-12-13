@@ -4,4 +4,5 @@ alias ls='exa'
 alias ll='ls -lg'
 alias kt='kotlinc-jvm'
 alias git='hub'
-alias htop='sudo htop'
+alias htop='sudo htop'i
+alias k='kubectl'
