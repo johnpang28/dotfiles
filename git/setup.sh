@@ -1,5 +1,10 @@
 #!/bin/sh
 
+set -e
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+source $DIR/../config.sh
+
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -P ~/.zsh
 chmod 744 ~/.zsh/git-completion.zsh
 
@@ -17,11 +22,5 @@ git config --global color.diff.old        "red bold"
 git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
 
-echo "Git name:"
-read name
-
-echo "Git email:"
-read email
-
-git config --global user.email $email
-git config --global user.name $name
+git config --global user.email "$GITHUB_EMAIL"
+git config --global user.name "$GITHIB_NAME"

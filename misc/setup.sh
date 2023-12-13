@@ -1,10 +1,7 @@
 #!/bin/sh
 
-npm install -g tldr
-
-wget https://raw.githubusercontent.com/rupa/z/master/z.sh -P ~/
+wget https://raw.githubusercontent.com/rupa/z/master/z.sh -P ~/ -nc
 touch ~/.z
 
 mkdir -p ~/.jenv/versions
 jenv enable-plugin export
-

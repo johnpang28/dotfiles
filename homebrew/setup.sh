@@ -9,3 +9,5 @@ fi
 brew update
 brew tap homebrew/bundle
 brew bundle --file $DIR/Brewfile
+
+sudo ln -s $(brew --prefix)/opt/libpq/bin/psql /usr/local/bin/psql
