@@ -15,6 +15,9 @@ else
     sudo unlink /opt/kotlinc
   fi
   sudo ln -sFf /opt/kotlinc-${KOTLIN_VERSION} /opt/kotlinc
+
+  sudo mkdir -p /usr/local/bin
+
   sudo ln -sf /opt/kotlinc/bin/kapt /usr/local/bin/kapt
   sudo ln -sf /opt/kotlinc/bin/kotlin /usr/local/bin/kotlin
   sudo ln -sf /opt/kotlinc/bin/kotlin-dce-js /usr/local/bin/kotlin-dce-js
