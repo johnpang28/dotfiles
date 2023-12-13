@@ -7,7 +7,6 @@ fi
 
 export PATH="$HOME/.jenv/bin:${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 eval "$(jenv init -)"
-[ -s "~/.jabba/jabba.sh" ] && source "~/.jabba/jabba.sh"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
