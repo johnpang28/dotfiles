@@ -23,4 +23,4 @@ git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
 
 git config --global user.email "$GITHUB_EMAIL"
-git config --global user.name "$GITHIB_NAME"
+git config --global user.name "$GITHUB_NAME"
