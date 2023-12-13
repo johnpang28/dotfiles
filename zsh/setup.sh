@@ -9,4 +9,3 @@ cp $DIR/zshrc ~/.zshrc
 cp $DIR/aliases ~/.aliases
 cp $DIR/env ~/.env
 
-compaudit | xargs chmod g-w
