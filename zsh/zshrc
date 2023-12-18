@@ -13,7 +13,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 source ~/.aliases
 source ~/.env
-source ~/z.sh
 
 fbr() {
     local branches branch
@@ -27,6 +26,7 @@ fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 
 source ~/antigen/bin/antigen.zsh
+antigen bundle agkozak/zsh-z
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
