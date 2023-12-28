@@ -29,7 +29,7 @@ git config --global user.name "$GITHUB:wq_NAME"
 
 # generate gpg passphrase and save to macos keychain - can be retrieved by user
 gpg_passphrase=$(pwgen -s -1 24)
-security add-generic-password -a ${USER} -s gpg_passhrase -w ${gpg_passphrase}
+security add-generic-password -a ${USER} -s gpg_passphrase -w ${gpg_passphrase}
 
 cat >key-config <<EOF
      %echo Generating a OpenPGP key
