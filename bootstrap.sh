@@ -19,7 +19,7 @@ fi
 
 
 # any order
-./iterm/setup.sh
+./iterm2/setup.sh
 ./git/setup.sh
 ./aws-cli/setup.sh
 
