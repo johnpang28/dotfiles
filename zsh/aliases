@@ -2,6 +2,5 @@ alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)
 alias ls='exa'
 alias ll='ls -lg'
 alias kt='kotlinc-jvm'
-alias git='hub'
 alias htop='sudo htop'i
 alias k='kubectl'

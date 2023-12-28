@@ -5,8 +5,10 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 source $DIR/../config.sh
 
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -P ~/.zsh
-chmod 744 ~/.zsh/git-completion.zsh
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -O ~/.zsh/_git
+chmod 744 ~/.git-completion.bash
+chmod 744 ~/.zsh/_git
 
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 

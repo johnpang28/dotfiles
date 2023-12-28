@@ -15,11 +15,11 @@ fi
 ./kotlin/setup.sh
 ./vim/setup.sh
 ./krew/setup.sh
+./git/setup.sh
 ./zsh/setup.sh
 
 
 # any order
 ./iterm2/setup.sh
-./git/setup.sh
 ./aws-cli/setup.sh
 ./macos/setup.sh
