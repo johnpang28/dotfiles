@@ -54,9 +54,14 @@ cat >~/.gnupg/gpg-agent.conf <<EOF
      pinentry-program /opt/homebrew/bin/pinentry-tty
 EOF
 
-echo "Remember to add gpg key to github account."
-
 signingkey=$(gpg --list-secret-keys --keyid-format=long | awk '/sec/{if (length($2) > 0) print $2}' | sed -e 's#.*/\(\)#\1#')
 
 git config --global commit.gpgsign true
 git config --global user.signingkey $signingkey
+
+echo "Remember to add gpg public key to github account:"
+
+gpg --armor --export $signingkey
+
+
+
