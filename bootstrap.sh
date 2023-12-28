@@ -22,4 +22,4 @@ fi
 ./iterm2/setup.sh
 ./git/setup.sh
 ./aws-cli/setup.sh
-
+./macos/setup.sh
