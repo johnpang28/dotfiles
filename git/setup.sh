@@ -27,7 +27,7 @@ git config --global color.diff.whitespace "red reverse"
 git config --global user.email "$GITHUB_NAME"
 git config --global user.name "$GITHUB:wq_NAME"
 
-# generate gpg passphrase and save to macos keychain - can be retrieved by user
+# generate gpg passphrase and save to macos keychain - can be retrieved by user and set in pinentry-mac
 gpg_passphrase=$(pwgen -s -1 24)
 security add-generic-password -a ${USER} -s gpg_passphrase -w ${gpg_passphrase}
 
@@ -50,8 +50,8 @@ gpg --batch --generate-key key-config
 rm key-config
 
 cat >~/.gnupg/gpg-agent.conf <<EOF
-     default-cache-ttl 31560000
-     pinentry-program /opt/homebrew/bin/pinentry-tty
+     default-cache-ttl 86400
+     pinentry-program /opt/homebrew/bin/pinentry-mac
 EOF
 
 signingkey=$(gpg --list-secret-keys --keyid-format=long | awk '/sec/{if (length($2) > 0) print $2}' | sed -e 's#.*/\(\)#\1#')
