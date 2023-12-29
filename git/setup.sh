@@ -54,6 +54,8 @@ cat >~/.gnupg/gpg-agent.conf <<EOF
      pinentry-program /opt/homebrew/bin/pinentry-mac
 EOF
 
+gpg-connect-agent reloadagent /bye
+
 signingkey=$(gpg --list-secret-keys --keyid-format=long | awk '/sec/{if (length($2) > 0) print $2}' | sed -e 's#.*/\(\)#\1#')
 
 git config --global commit.gpgsign true
