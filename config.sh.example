@@ -1,4 +1,4 @@
 #!/bin/sh
 
-export GITHUB_USER='Joe Blogs'
+export GITHUB_NAME='Joe Blogs'
 export GITHUB_EMAIL='joe.blogs@example.com'
