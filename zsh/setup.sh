@@ -11,3 +11,4 @@ cp $DIR/zshrc ~/.zshrc
 cp $DIR/aliases ~/.aliases
 cp $DIR/env ~/.env
 
+chmod 600 ~/.env
