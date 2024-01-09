@@ -6,7 +6,8 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/john/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zshrc
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $DIR/../zsh/env
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew update
