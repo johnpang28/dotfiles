@@ -7,11 +7,11 @@ if test ! $(which brew); then
 fi
 
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zshrc
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $DIR/../zsh/env
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew update
 brew tap homebrew/bundle
+brew install cask
 brew bundle --file $DIR/Brewfile
 
 sudo ln -s /opt/homebrew/opt/libpq/bin/psql /opt/homebrew/bin/psql

@@ -8,6 +8,8 @@ fi
 export PATH="$HOME/.jenv/bin:${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 eval "$(jenv init -)"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
