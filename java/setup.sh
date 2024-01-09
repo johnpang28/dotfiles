@@ -13,5 +13,5 @@ jenv add $(jabba which corretto@17)/Contents/Home
 jenv add $(jabba which corretto@11)/Contents/Home
 
 eval "$(jenv init -)"
-jenv enable-plugin export
 jenv global 21.0
+jenv enable-plugin export
