@@ -12,5 +12,5 @@ set -e
   ./"${KREW}" install krew
 )
 
-export export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 kubectl krew install stern
