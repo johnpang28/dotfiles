@@ -15,3 +15,4 @@ brew install cask
 brew bundle --file $DIR/Brewfile
 
 sudo ln -s /opt/homebrew/opt/libpq/bin/psql /opt/homebrew/bin/psql
+sudo ln -s /opt/homebrew/opt/mysql-client/bin/mysql /opt/homebrew/bin/mysql
