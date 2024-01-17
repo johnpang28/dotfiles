@@ -14,3 +14,5 @@ set -e
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 kubectl krew install stern
+kubectl krew install ns
+kubectl krew install ctx
