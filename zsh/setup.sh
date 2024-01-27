@@ -12,3 +12,6 @@ cp $DIR/aliases ~/.aliases
 cp $DIR/env ~/.env
 
 chmod 600 ~/.env
+
+mkdir -p ~/.zsh
+cp $DIR/functions/* ~/.zsh/

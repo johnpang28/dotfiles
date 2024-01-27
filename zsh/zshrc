@@ -16,17 +16,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.aliases
 source ~/.env
 
-fbr() {
-    local branches branch
-    branches=$(git branch --all | grep -v HEAD) &&
-    branch=$(echo "$branches" | fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
-    git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
-}
-
 # git completion
 zstyle ':completion:*:*:git:*' script ~/.git-completion.bash
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
+autoload -Uz fbr
 
 source ~/antigen/bin/antigen.zsh
 antigen bundle agkozak/zsh-z
