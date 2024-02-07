@@ -22,6 +22,8 @@ fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 autoload -Uz fbr
 
+source <(kubectl completion zsh)
+
 source ~/antigen/bin/antigen.zsh
 antigen bundle agkozak/zsh-z
 antigen bundle zsh-users/zsh-completions
