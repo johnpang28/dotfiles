@@ -29,6 +29,7 @@ git config --global user.email "$GITHUB_EMAIL"
 git config --global user.name "$GITHUB_NAME"
 
 git config --global --add --bool push.autoSetupRemote true
+git config --global blame.ignoreRevsFile .git-blame-ignore-revs
 
 # generate gpg passphrase and save to macos keychain
 gpg_passphrase=$(pwgen -s -1 24)
