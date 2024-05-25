@@ -23,6 +23,7 @@ autoload -Uz compinit && compinit
 autoload -Uz fbr
 
 source <(kubectl completion zsh)
+source <(fzf --zsh)
 
 source ~/antigen/bin/antigen.zsh
 antigen bundle agkozak/zsh-z
