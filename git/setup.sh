@@ -49,8 +49,6 @@ EOF
 
 gpg --batch --generate-key key-config
 
-rm key-config
-
 cat >~/.gnupg/gpg-agent.conf <<EOF
      default-cache-ttl 86400
      pinentry-program /opt/homebrew/bin/pinentry-mac
@@ -69,3 +67,4 @@ echo "Remember to add gpg public key to github account:"
 
 gpg --armor --export $signingkey
 
+rm key-config
