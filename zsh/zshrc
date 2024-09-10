@@ -24,6 +24,7 @@ autoload -Uz fbr
 
 source <(kubectl completion zsh)
 source <(fzf --zsh)
+source ~/.fzf-git.sh
 
 source ~/antigen/bin/antigen.zsh
 antigen bundle agkozak/zsh-z
