@@ -21,6 +21,7 @@ zstyle ':completion:*:*:git:*' script ~/.git-completion.bash
 fpath=(~/.zsh /opt/homebrew/share/zsh/site-functions $fpath)
 autoload -Uz compinit && compinit
 autoload -Uz fbr
+autoload -Uz y
 
 source <(kubectl completion zsh)
 source <(fzf --zsh)
