@@ -27,8 +27,9 @@ source <(kubectl completion zsh)
 source <(fzf --zsh)
 source ~/.fzf-git.sh
 
+eval "$(zoxide init zsh --cmd cd)"
+
 source ~/antigen/bin/antigen.zsh
-antigen bundle agkozak/zsh-z
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
