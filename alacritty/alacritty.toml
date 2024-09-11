@@ -1,0 +1,19 @@
+live_config_reload = true
+
+import = [
+  "~/.config/alacritty/catppuccin-latte.toml"
+]
+
+[font]
+
+normal.family = "MesloLGS NF"
+bold.family = "MesloLGS NF"
+italic.family = "MesloLGS NF"
+bold_italic.family = "MesloLGS NF"
+
+size = 15.0
+
+[window]
+
+dimensions.columns = 120
+dimensions.lines = 40

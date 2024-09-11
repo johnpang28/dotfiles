@@ -21,5 +21,6 @@ fi
 
 # any order
 ./iterm2/setup.sh
+./alacritty/setup.sh
 ./aws-cli/setup.sh
 ./macos/setup.sh
