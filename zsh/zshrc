@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export EDITOR="/opt/homebrew/bin/nvim"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(jenv init -)"
