@@ -3,7 +3,7 @@
 set -e
 
 if [ ! -e config.sh ]; then
-  echo "No config.sh"
+  echo "No config.sh."
   exit 1
 fi
 
@@ -17,10 +17,11 @@ fi
 ./krew/setup.sh
 ./git/setup.sh
 ./zsh/setup.sh
-
+./tmux/setup.sh
 
 # any order
 ./iterm2/setup.sh
-./alacritty/setup.sh
 ./aws-cli/setup.sh
 ./macos/setup.sh
+
+stow --dotfiles --dir stow --target ~/ home
