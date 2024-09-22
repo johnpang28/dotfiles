@@ -4,6 +4,11 @@ git clone https://github.com/zsh-users/antigen.git ~/antigen
 
 wget https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh -O ~/.fzf-git.sh
 
+git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
+cd zsh-syntax-highlighting/themes/
+
+wget https://raw.githubusercontent.com/catppuccin/zsh-syntax-highlighting/refs/heads/main/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh -O ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
 # use bat as a pager for man
 echo "export MANPAGER=\"sh -c 'col -bx | bat -l man -p'\"" > ~/.env
 
