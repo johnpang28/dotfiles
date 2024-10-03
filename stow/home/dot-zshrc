@@ -26,7 +26,6 @@ autoload -Uz y
 source <(kubectl completion zsh)
 source <(fzf --zsh)
 source ~/.fzf-git.sh
-autoload -Uz gco
 
 eval "$(zoxide init zsh --cmd cd)"
 
