@@ -22,6 +22,7 @@ fi
 # any order
 ./iterm2/setup.sh
 ./aws-cli/setup.sh
+./node/setup.sh
 ./macos/setup.sh
 
 stow --dotfiles --dir stow --target ~/ home
