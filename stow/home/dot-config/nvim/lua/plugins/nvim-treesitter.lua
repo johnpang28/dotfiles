@@ -7,8 +7,18 @@ return {
       local configs = require("nvim-treesitter.configs")
       configs.setup({
         sync_install = false,
+        auto_install = true,
         highlight = { enable = true },
         indent = { enable = true },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = '<CR>',
+            scope_incremental = '<CR>',
+            node_incremental = '<TAB>',
+            node_decremental = '<S-TAB>',
+          }
+        },
         ensure_installed = {
           "bash",
           "c",
@@ -25,7 +35,7 @@ return {
           "vim",
           "vimdoc",
           "yaml",
-        }
+        },
       })
     end
   }
