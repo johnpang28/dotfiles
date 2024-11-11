@@ -1,0 +1,14 @@
+hotKeys:
+  F1:
+    shortCut: F1
+    description: Namespaces
+    command: ns
+  F2:
+    shortCut: F2
+    description: Deployments
+    command: deployments
+  F3:
+    shortCut: F3
+    description: Pods
+    command: pods
+
