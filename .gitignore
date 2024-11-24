@@ -1,3 +1,4 @@
 .idea
 config.sh
 lazy-lock.json
+homebrew/Brewfile.lock.json
