@@ -11,6 +11,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew update
 brew tap homebrew/bundle
+brew tap FelixKratz/formulae
 brew install cask
 brew bundle --file $DIR/Brewfile
 
