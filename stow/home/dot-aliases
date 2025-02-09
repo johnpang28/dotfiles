@@ -7,4 +7,4 @@ alias k='kubectl'
 alias gco='git branch -a | fzf --height 50% | xargs git checkout'
 alias gpr='git push && gh pr create --fill'
 alias lg='lazygit'
-
+alias lzd='lazydocker'
