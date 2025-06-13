@@ -2,7 +2,7 @@
 
 set -e
 
-KOTLIN_VERSION=2.0.0
+KOTLIN_VERSION=2.1.21
 KOTLIN_COMPLIER_ZIP=kotlin-compiler-$KOTLIN_VERSION.zip
 
 wget https://github.com/JetBrains/kotlin/releases/download/v${KOTLIN_VERSION}/${KOTLIN_COMPLIER_ZIP} -P ~/Downloads -nc
