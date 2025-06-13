@@ -1,3 +1,5 @@
 .idea
 config.sh
 homebrew/Brewfile.lock.json
+stow/home/Library/Application\ Support/lazygit/state.yml
+stow/home/dot-zsh/_git
