@@ -121,7 +121,8 @@ alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
-alt-b = 'workspace B'
+alt-c = 'workspace C'
+alt-f = 'workspace F'
 alt-i = 'workspace I'
 alt-s = 'workspace S'
 alt-t = 'workspace T'
@@ -131,7 +132,8 @@ alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
 alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
 alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
-alt-shift-b = ['move-node-to-workspace B', 'workspace B']
+alt-shift-c = ['move-node-to-workspace C', 'workspace C']
+alt-shift-f = ['move-node-to-workspace F', 'workspace F']
 alt-shift-i = ['move-node-to-workspace I', 'workspace I']
 alt-shift-s = ['move-node-to-workspace S', 'workspace S']
 alt-shift-t = ['move-node-to-workspace T', 'workspace T']
@@ -147,12 +149,13 @@ alt-shift-semicolon = 'mode service'
 [workspace-to-monitor-force-assignment]
 1 = 'main'
 2 = 'main'
-4 = ['secondary', 'main']
-5 = ['secondary', 'main']
+4 = ['lg', 'main']
+5 = ['built-in', 'lg', 'main']
 I = 'main'
 T = 'main'
-B = ['secondary', 'main']
-S = ['secondary', 'main']
+C = ['lg', 'main']
+F = ['lg', 'main']
+S = ['built-in', 'lg', 'main']
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -188,8 +191,13 @@ run = "move-node-to-workspace I"
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = "move-node-to-workspace B"
+run = "move-node-to-workspace C"
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = "move-node-to-workspace S"
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = "move-node-to-workspace F"
+
