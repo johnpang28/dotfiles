@@ -44,3 +44,5 @@ cask 'nikitabobko/tap/aerospace'
 cask 'ghostty'
 cask 'font-symbols-only-nerd-font'
 brew 'neovim'
+brew 'jsonnet'
+
