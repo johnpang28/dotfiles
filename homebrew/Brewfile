@@ -45,4 +45,5 @@ cask 'ghostty'
 cask 'font-symbols-only-nerd-font'
 brew 'neovim'
 brew 'jsonnet'
+brew 'claude-code'
 
